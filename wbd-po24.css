@@ -1,0 +1,45 @@
+.wbd-grid,
+.wbd-grid--2,
+.wbd-grid--3,
+.wbd-grid--4,
+.wbd-grid--5{
+	display: grid;
+	gap: 4rem;
+}
+
+.wbd-grid {
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.wbd-grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.wbd-grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.wbd-grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.wbd-grid--5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .wbd-grid--2,
+    .wbd-grid--3,
+    .wbd-grid--4,
+	.wbd-grid--5
+     {
+        display: flex;
+	     flex-wrap: wrap;
+	     gap: 0;
+         flex-direction: column;
+    }
+	
+}
